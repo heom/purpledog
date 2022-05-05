@@ -14,10 +14,10 @@ import javax.persistence.Table;
 @Builder @AllArgsConstructor
 @Table(name = "users")
 public class UserEntity extends BaseEntity implements Persistable<String>{
-    @Id
+    @Id @Column(length = 50)
     private String id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 250)
     private String password;
 
     @Override

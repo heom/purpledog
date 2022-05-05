@@ -31,6 +31,14 @@ spring:
           lob:
             non_contextual_creation: true
         format_sql: true
+  #[Swagger - Spring2.6 Version Error]
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+springfox:
+  documentation:
+    swagger:
+      use-model-v3: false
 
 #[LOG CONFIG]
 logging:
